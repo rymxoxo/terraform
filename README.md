@@ -6,11 +6,12 @@ Welcome to my Terraform project! In this space, I'll guide you through some esse
 ## Commands Overview:
 
 1. **Initialize the Working Directory:**
+
    - Why? Terraform supports various providers like AWS, Azure, and Google Cloud. To efficiently manage these, run the following command to install the necessary providers defined in the Terraform configuration:
+
    ```bash
    terraform init
    ```
-````
 
 2. **Create an Execution Plan:**
 
@@ -89,3 +90,4 @@ Welcome to my Terraform project! In this space, I'll guide you through some esse
      `bash
 export TF_VAR_avail_zone="eu-west-1a"
 `
+````
