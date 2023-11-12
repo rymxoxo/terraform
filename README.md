@@ -1,4 +1,3 @@
-````markdown
 **HELLO!**
 
 Welcome to my Terraform project! In this space, I'll guide you through some essential commands and insights based on my experiences with the main.tf file. Feel free to explore and enjoy!
@@ -87,7 +86,7 @@ Welcome to my Terraform project! In this space, I'll guide you through some esse
 
 8. **Setting Custom Terraform Environment Variable:**
    - Set 'avail_zone' as a custom Terraform environment variable before applying:
-     `bash
-export TF_VAR_avail_zone="eu-west-1a"
-`
-````
+     ```bash
+      export TF_VAR_avail_zone="eu-west-1a"
+      ```
+
