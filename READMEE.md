@@ -87,6 +87,5 @@ Welcome to my Terraform project! In this space, I'll guide you through some esse
 8. **Setting Custom Terraform Environment Variable:**
    - Set 'avail_zone' as a custom Terraform environment variable before applying:
      `bash
-     export TF_VAR_avail_zone="eu-west-1a"
-     `
-     > > > > > > > 120b6f4 (first commit)
+export TF_VAR_avail_zone="eu-west-1a"
+`
