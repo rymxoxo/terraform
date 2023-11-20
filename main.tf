@@ -1,20 +1,20 @@
 provider "aws" {
-   region = "us-east-1"
-  # access_key = "ASIAV7UHRZ2ACT2YE5ZT"
-  # secret_key = "ubaZqCc9LB7AzV7fW46nQyDHgR0uLIlg2Uqs1+ao"
+  region     = "us-east-1"
+  access_key = "AKIASK3VTILNOU4XSAEI"
+  secret_key = "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"
 
 
 }
 variable "subnet-cidr-block" {
   description = "subnet cidr block"
-  default = "10.0.0.20/24"
+  default     = "10.0.0.20/24"
 }
 variable "vpc-cidr-block" {
   description = "subnet cidr block"
 }
 variable "environment" {
   description = "deploying env"
-  
+
 }
 
 
@@ -22,7 +22,7 @@ resource "aws_vpc" "dev-vpc" {
   cidr_block = var.vpc-cidr-block
   tags = {
     Name : var.environment
-    vpc_env:"dev "
+    vpc_env : "dev "
   }
 }
 
@@ -54,5 +54,5 @@ output "dev-vpc-id" {
 
 output "dev-subnet-2-id" {
   value = data.aws_vpc.existing_vpc.id
-  
+
 }
